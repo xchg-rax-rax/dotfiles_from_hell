@@ -101,3 +101,7 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 " disable F1 help
 map <F1> <Esc>
 imap <F1> <Esc>
+
+" Configure new Coc completion
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+inoremap <silent><expr> <tab> coc#pum#visible() ? coc#pum#confirm() : "\<tab>"
